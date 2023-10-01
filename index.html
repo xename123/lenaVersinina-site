@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20231001170753">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div style="background-color: #eee" class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="index.html" class="header__logo">
+					<img src="img/logo-black.svg" alt="logo" />
+					<div class="header__logo_content">
+						<h2 class="header__logo_title">Lena Vershinina</h2>
+						<p class="header__logo_text">interior designer</p>
+					</div>
+				</a>
+				<nav class="header__nav">
+					<a href="tel:79127626090" class="header__phone _button-link">8 (912) 762-60-90</a>
+					<div class="header__burger icon-menu"></div>
+				</nav>
+			</div>
+		</header>
+
+		<main class="page">
+			<div class="main-page">
+				<div class="main-page__container">
+					<h1 class="main-page__text">
+						<span>INTERIOR</span> <span>DESIGN</span>
+					</h1>
+					<div class="main-page__actions">
+						<div class="main-page__scroll">
+							<img src="img/icons/arrow-black.svg" alt="" />Scroll
+						</div>
+						<div class="main-page__counter"><span>1</span> — 4</div>
+					</div>
+				</div>
+			</div>
+			<div class="images-page">
+				<div data-room="1" class="images-page__image images-page__image_1">
+					<picture><source srcset="img/rooms/room.webp" type="image/webp"><img src="img/rooms/room.jpg" alt="room" /></picture>
+				</div>
+				<div data-room="2" class="images-page__image images-page__image_2">
+					<picture><source srcset="img/rooms/room.webp" type="image/webp"><img src="img/rooms/room.jpg" alt="room" /></picture>
+				</div>
+				<div data-room="3" class="images-page__image images-page__image_3">
+					<picture><source srcset="img/rooms/room.webp" type="image/webp"><img src="img/rooms/room.jpg" alt="room" /></picture>
+				</div>
+			</div>
+		</main>
+		<footer class="footer footer-page">
+			<div class="footer-page__container">
+				<a href="commerc.html" class="footer-page__commerc _button-underline">Коммерческие</a>
+				<div class="footer-page__buttons">
+					<button data-popup="#leave" type="button" class="footer-page__button _button footer-page__button_black">
+						оставить заявку
+					</button>
+					<a href="projects.html" type="button" class="footer-page__button footer-page__button_border">
+						Смотреть все проекты
+						<img src="img/icons/arrow-black.svg" alt="" />
+					</a>
+				</div>
+				<div class="footer-page__copy">©</div>
+			</div>
+		</footer>
+	</div>
+	<div class="transition">
+		<div class="transition__item transition__item_1"></div>
+		<div class="transition__item transition__item_2"></div>
+		<div class="transition__item transition__item_3"></div>
+	</div>
+
+	<div id="leave" aria-hidden="true" class="popup leave">
+		<div class="popup__content leave__content">
+			<button data-close type="button" class="popup__close leave__close"></button>
+			<div class="leave__image">
+				<picture><source srcset="img/rooms/room.webp" type="image/webp"><img src="img/rooms/room.jpg" alt="room" /></picture>
+			</div>
+			<div class="leave__body body-leave">
+				<div class="body-leave__container">
+					<div class="body-leave__content">
+						<h4 class="body-leave__title">Получить консультацию</h4>
+						<p class="body-leave__text">
+							Оставьте заявку и мы свяжемся в вами в ближайшее время. Бесплатно.
+						</p>
+						<form action="#" class="body-leave__form form-leave">
+							<div class="form-leave__data">
+								<div class="form-leave__item">
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка. Введите ваше имя" placeholder="имя" class="form-leave__input" />
+								</div>
+								<div class="form-leave__item">
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка. Введите ваш телефон" placeholder="Номер телефона" class="form-leave__input" />
+								</div>
+								<div class="form-leave__item">
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка. Введите площадь" placeholder="Площадь квартиры/дома" class="form-leave__input" />
+								</div>
+							</div>
+							<button type="button" class="form-leave__button _button">
+								Отправить
+							</button>
+							<p class="form-leave__agree">
+								Нажимая на кнопку, вы даете согласие на
+								<a href="#">обработку персональных данных</a>
+							</p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="menu-burger">
+		<div class="menu-burger__container">
+			<header class="menu-burger__header header-burger">
+				<a href="index.html" class="header__logo">
+					<img src="img/logo-white.svg" alt="logo" />
+					<div class="header__logo_content">
+						<h2 class="header__logo_title">Lena Vershinina</h2>
+						<p class="header__logo_text">interior designer</p>
+					</div>
+				</a>
+				<div class="header-burger__close icon-menu"></div>
+			</header>
+			<div class="menu-burger__main main-burger">
+				<nav class="main-burger__menu">
+					<ul class="main-burger__list">
+						<li class="main-burger__item">
+							<a href="index.html" class="main-burger__link"><img src="img/icons/arrow-white.svg" alt="" />Главная</a>
+						</li>
+						<li class="main-burger__item">
+							<a href="projects.html" class="main-burger__link"><img src="img/icons/arrow-white.svg" alt="" />Проекты</a>
+						</li>
+						<li class="main-burger__item">
+							<a href="flip.html" class="main-burger__link"><img src="img/icons/arrow-white.svg" alt="" />Флип-проекты и
+								хоумстейджинг</a>
+						</li>
+						<li class="main-burger__item">
+							<a href="services.html" class="main-burger__link"><img src="img/icons/arrow-white.svg" alt="" />Этапы, состав,
+								цена</a>
+						</li>
+						<li class="main-burger__item">
+							<a href="about.html" class="main-burger__link"><img src="img/icons/arrow-white.svg" alt="" />О себе</a>
+						</li>
+						<li class="main-burger__item">
+							<a href="videos.html" class="main-burger__link"><img src="img/icons/arrow-white.svg" alt="" />Видео</a>
+						</li>
+						<li class="main-burger__item">
+							<a href="blueprints.html" class="main-burger__link"><img src="img/icons/arrow-white.svg" alt="" />Чертежи
+							</a>
+							<a class="main-burger__download _button-link" href="#" download="img/blueprints/blueprint.jpg">Скачать пример проекта</a>
+						</li>
+						<li class="main-burger__item">
+							<a href="reviews.html" class="main-burger__link"><img src="img/icons/arrow-white.svg" alt="" />Отзывы</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="swiper main-burger__description">
+					<div class="main-burger__slider swiper-wrapper">
+						<div class="main-burger__slide swiper-slide">
+							<p class="main-burger__text">
+								Детальная проработка всех чертежей проекта. Фотореалистичное
+								изображение всех помещений объекта
+							</p>
+							<h6 class="main-burger__number">01</h6>
+						</div>
+						<div class="main-burger__slide swiper-slide">
+							<p class="main-burger__text">
+								Детальная проработка всех чертежей проекта. Фотореалистичное
+								изображение всех помещений объекта
+							</p>
+							<h6 class="main-burger__number">02</h6>
+						</div>
+						<div class="main-burger__slide swiper-slide">
+							<p class="main-burger__text">
+								Детальная проработка всех чертежей проекта. Фотореалистичное
+								изображение всех помещений объекта
+							</p>
+							<h6 class="main-burger__number">03</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="menu-burger__footer footer-burger">
+				<a href="#" class="footer-burger__comerc _button-underline">Коммерческие</a>
+				<ul class="footer-burger__links">
+					<li class="footer-burger__link">
+						<a href="#">Instagram</a>
+					</li>
+					<li class="footer-burger__link">
+						<a href="mailto:saviera@rambler.ru">saviera@rambler.ru</a>
+					</li>
+				</ul>
+				<a href="tel:89127626090" class="footer-burger__phone">8 (912) 762-60-90</a>
+				<button data-popup="#leave" type="button" class="footer-burger__leave _button">
+					Оставить заявку
+				</button>
+				<div class="footer-burger__copy">©</div>
+			</footer>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20231001170753"></script>
+</body>
+
+</html>
